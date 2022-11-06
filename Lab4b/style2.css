@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0.7rem;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-left: 10rem;
+}
+
+form h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+input,
+select {
+    margin-bottom: 1rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.options {
+    margin-top: 1rem;
+}
+
+.options label {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    color: white;
+    background: #333;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 750ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #2dbdff;
+}
+
+.preview {
+    display: flex;
+    width: 400px;
+    margin-right: 200px;
+    background: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview img {
+    height: 80%;
+    width: 80%;
+}
+
+@media (max-width: 1100px) {
+    .cart {
+        margin-left: 3rem;
+    }
+
+    .preview {
+        margin-right: 3rem;
+    }
+}
+
+@media (max-width: 880px) {
+    body {
+        margin: 0;
+    }
+
+    form h3 {
+        text-align: center;
+    }
+
+    .cart {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .form-data {
+        margin-top: 2rem;
+    }
+
+    .preview {
+        height: 400px;
+        width: 350px;
+        margin-right: 3rem;
+    }
+}
