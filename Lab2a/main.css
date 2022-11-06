@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&disp lay=swap");
+
+* {
+box-sizing: border-box; margin: 0;
+padding: 0;
+}
+
+body {
+font-family: "Poppins", sans-serif; padding: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+font-family: "Poppins", sans-serif; font-weight: normal;
+}
+
+li {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+
+.name {
+display: grid; grid-gap: 1rem;
+grid-template-columns: 0.3fr 1fr; align-items: center;
+}
+
+.nav {
+display: flex; align-items: center;
+justify-content: space-between;
+}
+
+.nav h2 {
+font-size: 2rem;
+}
+
+.nav img {
+background-size: cover; width: 60px;
+height: 60px; border: transparent; border-radius: 50%;
+}
+
+.nav h4 {
+font-family: "Times New Roman", Times, serif; font-size: 1rem;
+}
+
+.nav i {
+margin-right: 0.3rem;
+}
+
+.nav a {
+color: #333;
+}
+
+/* Skills and Experience */
+
+.content {
+display: flex; align-items: center;
+justify-content: center;
+
+width: 95vw;
+}
+
+.card {
+padding: 1rem;
+
+background: rgba(236, 236, 236, 0.4); border-radius: 7px;
+height: 180px; width: 320px; margin: 2rem 5rem;
+}
+
+.card h3 {
+font-weight: bold;
+}
+
+.workex table th { padding-right: 1rem;
+}
+
+@media (max-width: 700px) {
+.content {
+flex-direction: column; width: 90vw;
+}
+
+.media-data {
+display: flex;
+flex-direction: column; align-items: center; justify-content: center;
+}
+
+video, audio {
+margin: 1rem 0;
+}
+
+.card {
+margin: 2rem 0;
+}
+
+.body {
+padding: 0;
+}
+
+}
