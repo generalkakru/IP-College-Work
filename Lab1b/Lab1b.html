@@ -1,0 +1,70 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tshirts</title>
+</head>
+<body>
+
+<form action="" enctype="multipart/form-data" method="put">
+<u><h1>Order Details:</h1></u>
+<h3><u><p>Your Order:</p></u></h3>
+
+<img class="tshirt" width="250px" src="tshirtdisplay.jpg" alt=""><br><br>
+<h3><u><label for="tagline">Enter Tagline:-</label><br></u></h3>
+
+<input type="text" name="tagline" id="tagline"><br><br>
+<h3><u><label for="color">Choose Color:-</label><br></u></h3>
+
+<input type="radio" id="Black" name="color" value="Black">
+<label for="red">Black</label><br>
+
+<input type="radio" id="red" name="color" value="Red">
+<label for="white">Red</label><br>
+
+<input type="radio" id="blue" name="color" value="blue">
+<label for="blue">Blue</label><br>
+
+<input type="radio" id="Green" name="color" value="Green">
+<label for="blue">Green</label><br><br>
+
+<h3><u><label for="size">Select Size:-</label><br></u></h3>
+
+<select id="size" name="size">
+<option value="25">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="40">45</option>
+<option value="40">50</option>
+
+</select><br><br>
+<h3><u><label for="quantity">Quantity:- </label><br></u></h3>
+
+<select id="quantity" name="quantity">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="4">5</option>
+</select><br><br>
+
+<label for="price"><h3><u>Total Order Price:</u></h3> <strong>10$</strong></label><br><br>
+<h3><u><label for="payment_options">Payment Options:</label><br></u></h3>
+<input type="radio" id="cc" name="color" value="Credit/Debit Card">
+<label for="cc">Credit/Debit Card</label><br>
+<input type="radio" id="upi" name="color" value="UPI">
+<label for="upi">UPI</label><br>
+<input type="radio" id="crypto" name="color" value="Crypto">
+<label for="crypto">Crypto-Wallet</label><br><br>
+<h3><u><label for="address">Enter your Address:</label><br></u></h3>
+<input type="text" name="address" id="address"><br><br>
+<h3><u><button type="submit">Place Order</button></u></h3>
+
+</form>
+
+</body>
+
+</html>
