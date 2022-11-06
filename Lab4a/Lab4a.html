@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Internet Programming</title>
+    </head>
+    <body>
+        <h1>Experiment 4</h1>
+        <p>To do some tomfoolery in JavaScript.</p>
+
+        <p>Refer the Console for Output.</p>
+
+        <hr noshade="" />
+        <p>Input Box (Error Checking)</p>
+        <input
+            id="error_checking"
+            type="text"
+            value=""
+            placeholder="Enter string or 0 for error"
+        />
+        <button type="submit" onclick="return checkError()">Submit</button>
+    </body>
+    <script>
+
+        const student1 = {
+            name: "Pritish",
+            class_name: "D15A",
+            roll_no: 21,
+        };
+
+        console.log("Student 1: ", student1);
+
+        class Student {
+            constructor(name, class_name, roll_no) {
+                this.name = name;
+                this.class_name = class_name;
+                this.roll_no = roll_no;
+            }
+        }
+        const student2 = new Student("Riya", "D15A", 22);
+        console.log("Student 2: ", student2);
+
+        //Prototype
+
+        Student.prototype.nationality = "Indian";
+        console.log("Student 2: ", student2);
+
+        //Exception
+
+        function checkError() {
+            const value = document.getElementById("error_checking").value;
+            console.log(value);
+            if (isNaN(value) || value == 0) {
+                throw new Error("Invalid Input ");
+            } else {
+                console.log("Valid");
+            }
+        }
+    </script>
+</html>
